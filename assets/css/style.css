@@ -1,0 +1,66 @@
+
+/*-------  Background  -------*/
+
+body {
+    background: url('/assets/images/Room_of_Requirement_.png') no-repeat center center fixed;
+    -webkit-background-size: cover; 
+}
+
+/*-------  Harry Potter Font  -------*/
+
+@font-face {
+    font-family: "HARRYP__";
+    src: url("/assets/images/HARRYP__.TTF");
+}
+
+/*-------  Header  -------*/
+
+h1 {
+    font-family: "HARRYP__";
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background-color: #015564;
+    color: #04899b;
+}
+
+
+/*-------  Card Layout  -------*/
+.cardStyle{
+    height: 174px;
+}
+
+.cardText{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.cardBorder{
+    border: 4px solid #04899b;
+}
+
+.button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 70px;
+}
+
+#imgHover:hover {
+    opacity: 0.5;
+}
+
+.charBorder{
+   border: 2px solid #17a2b8;
+}
+
+
+.middleRow{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
