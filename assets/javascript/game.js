@@ -18,7 +18,6 @@ $(document).ready(function () {
             "enemyAttackBack": 20,
         },
 
-
         "Hermione": {
             name: "Hermione",
             health: 240,
@@ -26,7 +25,6 @@ $(document).ready(function () {
             imageUrl: "assets/images/hermione.jpg",
             enemyAttackBack: 20,
         },
-
 
         "Ron": {
             name: "Ron",
@@ -46,9 +44,9 @@ $(document).ready(function () {
 
     };
 
-    var opponents = [];
-    var opponent;
-    var muggleChoice;
+    var opponents = []; //opponent array
+    var opponent; //chosen opp
+    //var userChoice;
     var defeatedCount = 0;
     var characterTurn = 1;
 
@@ -125,12 +123,9 @@ $(document).ready(function () {
 
        $('#userChoice').on('click', function (){
 
-            if (!userChoice){
+            if (userChoice){
                 $(this).appendTo('#userPlacement');
-                $(this).find('#imgHover')
-                    .removeId('#imgHover');
-
-
+                
             }
 
             updateCharacters();
@@ -141,7 +136,20 @@ $(document).ready(function () {
 //-------  Attack  -------//
 
 
-    //attack button click
+    //attack button click 
+
+
+    
+       var obj = document.createElement("audio");
+        obj.src="assets/sounds/spellSound.mp3";
+        obj.volume=0.10;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
+        $("#spell-button").click(function() {
+            obj.play();
+
+        });
 
 
 
